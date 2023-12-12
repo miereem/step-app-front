@@ -23,7 +23,7 @@ export default function PlacesPage() {
                         </svg>
                         Add a new place</Link>
                 </div>
-            <div className="mt-4 grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-2 ">
+            <div className="mt-4 grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-2  ">
                 {places.length > 0 && places.map(place => (
                     <Link to={'/account/places/'+place.id} className="grid grid-rows-1 flex cursor-pointer gap-4 bg-gray-50 p-4 px-4 rounded-2xl  justify-around">
                         <h2 className="text-xl">{place.title}</h2>
