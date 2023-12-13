@@ -11,17 +11,20 @@ import PlacesPage from "./Pages/PlacesPage.jsx";
 import PlacesFormPage from "./Pages/PlacesFormPage.jsx";
 import PlacePage from "./Pages/PlacePage.jsx";
 import SearchBar from "./SearchBar";
+import { useState } from "react";
 
 axios.defaults.baseURL = "http://localhost:3000";
 axios.defaults.withCredentials = true;
 
 function App() {
+  //   const [places, setPlaces] = useState([]);
   return (
     <UserContextProvider>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<IndexPage />}></Route>
-          {/* <Route path="/search" element={<SearchBar />}></Route> */}
+          <Route path="/search" element={<SearchBar />}></Route>
+
           <Route path="/login" element={<LoginPage />}></Route>
           <Route path="/register" element={<RegisterPage />}></Route>
           <Route path="/account" element={<AccountPage />}></Route>
