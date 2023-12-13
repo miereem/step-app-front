@@ -4,7 +4,7 @@ import axios from "axios";
 import Image from "../Image";
 
 export default function PlacePage() {
-    const [currIndex, setCurrIndex] = useState(0);
+  const [currIndex, setCurrIndex] = useState(0);
   const { id } = useParams();
   const [place, setPlace] = useState(null);
   useEffect(() => {
